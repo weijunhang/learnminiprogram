@@ -1,0 +1,5 @@
+/* components/my-cmp/my-cmp.wxss */
+.title{
+  background: red;
+  font-size: 30px;
+}

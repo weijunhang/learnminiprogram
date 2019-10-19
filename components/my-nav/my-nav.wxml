@@ -1,0 +1,17 @@
+<!--components/my-nav/my-nav.wxml-->
+<view class="nav">
+  <block wx:for="{{navdata}}" wx:key="{{index}}">
+    <view class="nav-item {{currentIndex == index ? 'active' : ''}}" 
+          bindtap="handleItem1"
+          data-index="{{index}}"
+          data-name="{{item}}">
+      <text class="nav-text">{{item}}</text>
+    </view>
+  </block>
+</view>
+<!-- <view>{{navdata}}</view> -->
+ <view class="sun">计数： {{contner}}</view>
+
+ <view>我是插槽的首部</view>
+ <slot/>
+ <view>我是插槽的尾部</view>

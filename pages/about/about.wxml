@@ -1,2 +1,21 @@
 <!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
+<view>
+  <include src="/wxml/template/nav.wxml" />
+</view>
+
+<input placeholder="aasdasdasds"></input>
+
+<template name="even">
+  偶数：{{num}}
+</template>
+<template name="odd">
+  奇数：{{num}}
+</template>
+
+<view wx:for="{{[20,21,12,34,33,21,11]}}" wx:key="{{index}}">
+  <template is="{{item % 2 == 0?'even':'odd'}}" data="{{num:item}}"/>
+</view>
+
+<import src="/wxml/template/template.wxml"/>
+
+<template is="test"/>

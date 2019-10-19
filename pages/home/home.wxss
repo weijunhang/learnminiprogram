@@ -1,5 +1,14 @@
 /* pages/home/home.wxss */
-.title{
-  color: red;
-  font-size: 20px;
+.choose{
+  background: red;
+  color: white;
+}
+input{
+  border: 1px solid red;
+  margin: 10px 30px;
+}
+.act{
+  width: 100rpx;
+  height: 100rpx;
+  background: red;
 }

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "my-cmp":"/components/my-cmp/my-cmp",
+    "my-prop":"/components/my-prop/my-prop",
+    "my-even":"/components/my-even/my-even"
+  }
+}

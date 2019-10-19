@@ -1,0 +1,2 @@
+<!--components/test-cmp/test-cmp.wxml-->
+<view class="title">测试 把这个组件加载到另一个组件上 是否在页面显示</view>

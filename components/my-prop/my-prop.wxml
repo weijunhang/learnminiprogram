@@ -1,0 +1,3 @@
+<!--components/my-prop/my-prop.wxml-->
+<view class="title titleclass">{{props}}</view>
+<view class="titleclass1">我是一个长城长城长城内容</view>

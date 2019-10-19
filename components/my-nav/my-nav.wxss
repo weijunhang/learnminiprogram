@@ -1,0 +1,23 @@
+/* components/my-nav/my-nav.wxss */
+.nav{
+  display: flex;
+  background: #ccc;
+  line-height: 100rpx;
+  height: 100rpx;
+}
+.nav-item{
+  flex: 1;
+  text-align: center;
+  font-size: 40rpx;
+}
+.active{
+  color: red;
+}
+.active .nav-text{
+  border-bottom: 5rpx solid red;
+  padding: 10rpx 10rpx
+}
+.sun{
+  font-size: 30px;
+  font-weight: 600;
+}

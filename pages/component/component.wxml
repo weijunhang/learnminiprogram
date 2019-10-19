@@ -1,0 +1,13 @@
+<!--pages/component/component.wxml-->
+<my-cmp/>
+<text class="title">引用的组件js内设置options:{styleIsolation:"apply-shared"}</text>
+<view>apply-shared 令页面的css的影响组件的样式</view>
+<view>shared 令页面与组件的样式相互影响</view>
+<view>不能影响组件中另一个引用组件的样式</view>
+
+<my-prop props="hhhs" titleclass="red"/>
+<my-prop props="传给组件的数据 在设置自定义属性中 对象属性 type类型必须大写首字母 String"  titleclass="green"/>
+<my-prop  titleclass="blue" titleclass1="font"/>
+
+<view>当前计数：{{counter}}</view>
+<my-even bind:icon="handleIcon"/>

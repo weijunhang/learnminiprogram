@@ -1,0 +1,4 @@
+
+<include src="./headnav.wxml" />
+
+<view>导航</view>

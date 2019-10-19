@@ -1,0 +1,12 @@
+<!--pages/tab-component/tab-component.wxml-->
+<my-nav navdata="{{navdata}}" bind:currer="handlecurrer" id="sunn">
+  <button>单个插槽</button>
+</my-nav>
+<button bind:tap="handlesun">直接修改组件中的计数</button>
+
+<my-slot>
+  <button slot="slot2">按钮</button>
+  <slider slot="slot3" value="40">按钮3</slider>
+  <button slot="slot1">阿难你呢</button>
+</my-slot>
+

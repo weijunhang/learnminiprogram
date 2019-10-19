@@ -1,0 +1,39 @@
+<!--pages/event/event.wxml-->
+<button size="mini" bindtap="handleBtn">按钮</button>
+<button size="mini" bind:tap="handleBtn">按钮</button>
+<button size="mini" catchtap="handleBtn">按钮</button>
+
+<view class="box" 
+      bindtouchstart="handleTouchStart"
+      bindtouchmove="handleTouchMove"
+      bindtouchend="handleTouchEnd"
+      bindtap="handleTap"
+      bindtouchcancel="handleTouchCancel"
+      bindlongpress="handleLongPress"></view>
+
+<button bindtap="handleobj">打印对象</button>
+
+<view class="chuan" 
+      bindtouchstart="handleTouchStart" 
+      data-name="jock"
+      data-age="18"
+      data-even="打了一个人">事件参数传递</view>
+<view>{{name}} {{age}} {{even}}</view>
+
+<view class="box_flex">
+  <block wx:for="{{xundata}}" wx:key="{{index}}">
+    <view class="bo_items"
+          bindtap="handleEvenCan"
+          data-item="{{item}}"
+          data-index="{{index}}">{{item}}</view>
+  </block>
+</view>
+
+<view class="box1" capture-bind:tap="handleCaptrueBind1" bindtap="handleBind1">
+box1
+  <view class="box2" capture-bind:tap="handleCaptrueBind2" catchtap="handleBind2">
+  box2
+    <view class="box3" capture-bind:tap="handleCaptrueBind3" bindtap="handleBind3">box3</view>
+  </view>
+</view>
+ 

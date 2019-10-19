@@ -1,0 +1,2 @@
+<!--components/my-even/my-even.wxml-->
+<button bindtap="handleIcon">+1</button>

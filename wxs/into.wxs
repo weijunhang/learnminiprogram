@@ -1,0 +1,9 @@
+var message = "hello wxs"
+function sum(data1,data2){
+  return data1 + data2
+}
+
+module.exports = {
+  message: message,
+  sum : sum,
+}

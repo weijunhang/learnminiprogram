@@ -1,0 +1,4 @@
+<!--components/my-cmp/my-cmp.wxml-->
+<view class="title">这是第一个自定义组件component</view>
+
+<test-cmp/>

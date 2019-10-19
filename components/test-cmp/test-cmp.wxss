@@ -1,0 +1,4 @@
+/* components/test-cmp/test-cmp.wxss */
+.title{
+  color: blue;
+}

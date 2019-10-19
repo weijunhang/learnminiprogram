@@ -1,1 +1,2 @@
 /* pages/about/about.wxss */
+@import '../home/home.wxss';

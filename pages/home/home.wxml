@@ -1,3 +1,43 @@
 <!--pages/home/home.wxml-->
-<text class="title">hello world</text>
-<button size="mini">按钮</button>
+<view>hello</view>
+<button bindtap="tapname">输出</button>
+<view>{{list}}</view>
+
+<text>nihao </text>
+<text selectable>hello world\n</text>
+<text>hello world</text>
+
+<button loading hover-class="choose">选择</button>
+<button type="primary">sad</button>
+<button bindtap="handlechossAlbum">选择图片</button>
+<image src="{{imgPath}}"></image>
+
+<input type="text" bindinput="handleinput"></input>
+
+<view>{{nowTime}}</view>
+<button bindtap="handleNowTime">开始计时</button>
+
+<block wx:for="{{3}}" wx:key="{{index}}">
+  <view>nihao</view>
+  <button size="mini">anniu</button>
+  <text>去你妹</text>
+</block>
+
+<block wx:if="{{isjm >= 20}}">
+  <view>小小的热</view>
+</block>
+<block wx:elif="{{isjm >= 10}}">
+  <view>dada的热</view>
+</block>
+<block wx:else>
+  <view>小qwe的热</view>
+</block>
+
+<block wx:for="{{two}}" wx:key="index" wx:for-item="two1">
+  <block wx:for="{{two1}}" wx:key="index">
+    <text>{{item}}</text>
+  </block>
+</block>
+
+<view class="nav {{isact?'act':''}}"></view>
+<button size="mini" bindtap="tabhuan">切换</button>

@@ -1,66 +1,57 @@
 // pages/home/home.js
+const app = getApp()
+const name=app.globalData.name
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    list:[],
+    imgPath:'',
+    nowTime: new Date().toLocaleString(),
+    isjm: 1,
+    two:[
+      [2,2,3,4],
+      [4,35,64,23],
+      [3,3],
+      [3,22,2]
+    ],
+    isact:false
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  handleinput(e){
+    console.log("用户输入",e)
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  tabhuan(){
+    this.setData({
+      isact:!this.data.isact
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  handlechossAlbum(){
+    wx.chooseImage({
+      success:(res)=> {
+        console.log(res)
+        const path=res.tempFilePaths[0]
+        this.setData({
+          imgPath:path
+        })
+      },
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  onLoad(){
+    wx.request({
+      url: 'https://api.yrw365.com/admin-web/api/user/mobile/bind',
+      success: (res) => {
+        console.log(res);
+        const data = res.data
+        this.setData({
+          list:data
+        })
+      }
+    }),
+    // handleNowTime(){
+    setInterval(()=>{
+      this.setData({
+        nowTime: new Date().toLocaleString()
+      })
+    },1000)
+  // },
+    console.log('onload 在调用')
   }
 })
