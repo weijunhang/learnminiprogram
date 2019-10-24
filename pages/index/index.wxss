@@ -1,0 +1,24 @@
+/* pages/index/index.wxss */
+.popular image{
+  width: 100%
+}
+.w-nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.goods-item{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.backtop{
+  position: fixed;
+  bottom: 20rpx;
+  right: 20rpx;
+}
+.backtop image{
+  width: 100rpx;
+}

@@ -1,0 +1,29 @@
+/* pages/index/childPopular/childPopular.wxss */
+.popularlike{
+  border-top: 10rpx solid #eee;
+  margin-top: 20rpx;
+  border-bottom: 20rpx solid #eee;
+}
+.popularlike-text{
+  text-align: center;
+  font-size: 40rpx;
+  font-weight: 600;
+  margin: 30rpx;
+  color: #555;
+}
+.popularlike-cont{
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  /* //flex布局换行显示 */
+}
+.popularlike-cont-tu{
+  flex: 1;
+  font-size: 30rpx;
+  margin-bottom: 20rpx;
+}
+.popularlike-cont-tu image{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+}

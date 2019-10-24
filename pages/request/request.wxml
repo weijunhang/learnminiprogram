@@ -1,0 +1,15 @@
+<!--pages/request/request.wxml-->
+<button bindtap="handleshu" data-age="20">输出</button>
+<text>{{name}}</text>
+<text>{{age}}</text>
+<button bindtap="handledata1">得到数据</button>
+<text>{{data1}}</text>
+
+
+<button bindtap="handleTap">改变</button>
+<block wx:for="{{re}}" wx:key="{{re}}">
+  <view>{{item}}</view>
+</block>
+
+<navigator url="/pages/home/home" open-type="switchTab">转向首页</navigator>
+<navigator url="/pages/event/event">转向event</navigator>

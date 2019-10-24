@@ -1,0 +1,42 @@
+<!--pages/index/index.wxml-->
+<childComponent lists="{{totopSwiper}}" />
+
+<!-- 推荐栏目 -->
+<!-- <w-tuijian lists="{{tuijian}}"/> -->
+<!-- <view class="tuijianbox">
+  <block wx:for="{{tuijians}}" wx:key="{{index}}">
+    <view class="tuijian1">
+      <image src="{{item.url}}"></image>
+      <text>{{item.type}}</text>
+    </view>
+  </block>
+</view> -->
+<w-tuijian tuijians="{{tuijian}}" />
+
+<view class="popular">
+  <image src="/assets/index/popular_bg.jpg" mode="widthFix"></image>
+</view>
+
+<!-- 本周流行 -->
+<childPopular likes="{{popularlike}}" bind:imageload="handleImageLoad"/>
+
+<!-- 导航 -->
+<w-nav lists="{{titles}}" 
+       bind:tab="handletab" 
+       class="{{isTabFixed?'w-nav':''}}"
+       id="tab-control"/>
+<!-- 占位 -->
+<w-nav lists="{{titles}}" wx:if="{{isTabFixed}}"/>
+
+
+<!-- 商品展示 -->
+<view class="goods-item">
+  <block wx:for="{{goods[currentType].list}}" wx:key="{{index}}">
+    <w-goods-item class="w-goods" item="{{item}}"/>
+  </block>
+</view>
+
+<!-- 回到顶部 -->
+<view class="backtop" wx:if="{{isback}}" bind:tap="backtop">
+  <image src="../../assets/common/top.png" mode="widthFix"></image>
+</view>

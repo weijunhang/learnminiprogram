@@ -1,0 +1,11 @@
+<!--components/w-nav/w-nav.wxml-->
+<view class="tab-top">
+  <block wx:for="{{lists}}" wx:key="{{index}}">
+    <view class="tab-text {{tapindex == index ?'tab-active':'' }}" 
+          bindtap="tabText" 
+          data-index='{{index}}'
+          data-name="{{item}}">
+      <text>{{item}}</text>
+    </view>
+  </block>
+</view>

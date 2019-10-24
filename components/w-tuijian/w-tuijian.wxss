@@ -1,0 +1,16 @@
+/* components/w-tuijian/w-tuijian.wxss */
+.tuijianbox{
+  display: flex;
+  margin-top:30rpx;
+  border-bottom: 20rpx solid #eee;
+}
+.tuijian1{
+  flex: 1;
+  text-align: center;
+  padding-bottom: 20rpx; 
+}
+.tuijian1 image{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+}

@@ -1,0 +1,16 @@
+<!--pages/index/childPopular/childPopular.wxml-->
+<view class="popularlike">
+  <view class="popularlike-text">
+    <text>本周流行</text>
+  </view>
+  <view class="popularlike-cont">
+    <block wx:for="{{likes}}" wx:key="{{index}}">
+      <view class="popularlike-cont-tu">
+        <image src="{{item.url}}" bindload="handleImageLoad"></image>
+        <view>
+        <text>{{item.type}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

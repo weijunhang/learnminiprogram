@@ -1,0 +1,12 @@
+<!--pages/index/childComponent/childComponent.wxml-->
+<swiper class="swiper" 
+        indicator-dots="true" 
+        autoplay interval="2000" 
+        circular
+        indicator-active-color="#ff5557">
+  <block wx:for="{{lists}}" wx:key="{{index}}">
+    <swiper-item class="swiper-item">
+      <image src="{{item.url}}"></image>
+    </swiper-item>
+  </block>
+</swiper>

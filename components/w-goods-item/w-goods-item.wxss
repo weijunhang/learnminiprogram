@@ -1,0 +1,17 @@
+/* components/w-goods-item/w-goods-item.wxss */
+.item{
+  flex: 1;
+  width: 350rpx;
+  margin:10rpx 0; 
+  text-align: center;
+ 
+}
+.title{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+}
+.item image{
+  width: 350rpx;
+  border-radius: 10rpx;
+}

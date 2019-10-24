@@ -1,0 +1,7 @@
+<!--components/w-goods-item/w-goods-item.wxml-->
+    <view class="item">
+      <image src="{{item.pic_big}}" mode="widthFix"></image>
+      <view class="title">{{item.title}}</view>
+      <view>{{item.author}}</view>
+    </view>
+   

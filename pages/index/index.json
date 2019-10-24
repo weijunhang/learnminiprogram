@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "childComponent":"childComponent/childComponent",
+    "w-tuijian": "../../components/w-tuijian/w-tuijian",
+    "childPopular":"childPopular/childPopular",
+    "w-nav":"../../components/w-nav/w-nav",
+    "w-goods-item":"../../components/w-goods-item/w-goods-item"
+  }
+}

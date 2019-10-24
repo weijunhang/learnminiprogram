@@ -1,0 +1,9 @@
+<!--components/w-tuijian/w-tuijian.wxml-->
+<view class="tuijianbox">
+  <block wx:for="{{tuijians}}" wx:key="{{index}}">
+    <view class="tuijian1">
+      <image src="{{item.url}}"></image>
+      <text>{{item.type}}</text>
+    </view>
+  </block> 
+</view>

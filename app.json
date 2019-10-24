@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/index/index",
+    "pages/request/request",
     "pages/component/component",
     "pages/tab-component/tab-component",
     "pages/event/event",
@@ -19,7 +21,7 @@
     "selectedColor": "#000000",
     "list": [
       {
-        "pagePath": "pages/home/home",
+        "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "assets/tabbar/tabbarindex.png",
         "selectedIconPath": "assets/tabbar/tabbarindex-active.png"
